@@ -8,7 +8,6 @@ body {
     margin: -5px auto;
     padding: 50px 45px 0 45px;
     background-color: white;
-/*     box-shadow: 0 0 0 10px #ddd; */
     border-left: 2px solid #ddd;
     border-right: 2px solid #ddd;
     overflow: hidden;
@@ -16,7 +15,6 @@ body {
 
 .menu {
     display: block;
-/*    width: 100%;*/
     height: 40px;
     background: linear-gradient(to top, #444343, #5E5E5E);
     margin-top: 40px;
@@ -43,6 +41,7 @@ body {
     color: white;
     width: 140px;
     height: 40px;
+    font-family: OpenSans;
 }
 
 .menu a:hover {
@@ -51,16 +50,14 @@ body {
 }
 
 .sidebar {
-/*    display: block; */
-/*    width: 240px; */
     color: black;
     margin-top: 40px;
-/*     height: 500px; /* непонятно почему только эта высота включается в wrapper*/
 }
 
 .sidebarmenu {
     list-style: none;
     padding: 0;
+    margin: 0;
     float: left;
 }
 
@@ -73,10 +70,17 @@ body {
     margin-bottom: -1px;
     padding-left: 14px;
     border: 1px solid #e5e5e5;
+    color: #656363;
 }
 
 .sidebarmenu a:hover {
     background: #F9F9F9;
+    color: #2c2b2b;
+}
+
+.sidebarmenu span:hover {
+    display: block;
+    padding-left: 28px;
 }
 
 .content {
@@ -84,11 +88,19 @@ body {
 }
 
 .content .pic {
+    display: table-cell;
     border: 1px solid #e5e5e5;
+    height: 400px;
+    width: 760px;
+    margin-top: 40px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .content .description {
     padding: 30px 30px;
+    color: #2c2b2b;
+    font-family: OpenSans;
 }
 
 .push {
@@ -105,15 +117,14 @@ footer {
 .bottomMenu {
     display: block;
     height: 40px;
-    background: linear-gradient(to top, #aaa, #ddd);
+    background: #E1E1E1;
 }
 
 .bottomMenuList {
     margin: 0;
     padding: 0;
     list-style: none;
-    float: left;
-    color: white;
+    float: left;    
     line-height: 40px;
 }
 
@@ -127,15 +138,17 @@ footer {
     float: right;
     padding-right: 40px;
     line-height: 40px;
-    color: white;
+    color: black;
+    font-family: OpenSans;
 }
 
 .bottomMenu a {
     display: block;
     text-decoration: none;
-    color: white;
     width: 140px;
     height: 40px;
+    color: #2c2c2c;
+    font-family: OpenSans;
 }
 
 .bottomMenu a:hover {
