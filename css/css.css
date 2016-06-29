@@ -5,11 +5,14 @@ body {
 .wrapper {
     display: block;
     width: 1060px;
-    margin: 0 auto;
+    margin: -5px auto;
     padding: 50px 45px 0 45px;
     background-color: white;
-    box-shadow: 0 0 0 10px #ddd;
- }
+/*     box-shadow: 0 0 0 10px #ddd; */
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    overflow: hidden;
+}
 
 .menu {
     display: block;
@@ -48,11 +51,11 @@ body {
 }
 
 .sidebar {
-    display: block;
-/*    width: 240px;*/
+/*    display: block; */
+/*    width: 240px; */
     color: black;
     margin-top: 40px;
-    height: 500px; /* непонятно почему только эта высота включается в wrapper*/
+/*     height: 500px; /* непонятно почему только эта высота включается в wrapper*/
 }
 
 .sidebarmenu {
@@ -61,31 +64,80 @@ body {
     float: left;
 }
 
-.sidebarmenu li {
-    box-shadow: inset 0 0 0 1px #ddd;
-}
-
 .sidebarmenu a {
     display: block;
     width: 240px;
     height: 40px;
-    margin-left: 20px;
     text-decoration: none;
-    line-height: 40px;
-/*
-    border-width: 5px;
-    border-color: #ddd;
-*/
+    line-height: 40px; 
+    margin-bottom: -1px;
+    padding-left: 14px;
+    border: 1px solid #e5e5e5;
 }
 
 .sidebarmenu a:hover {
     background: #F9F9F9;
-    margin: 0;
 }
 
-
 .content {
-    box-shadow: inset 0 0 0 1px #ddd;
+    margin-left: 300px;
+}
+
+.content .pic {
+    border: 1px solid #e5e5e5;
+}
+
+.content .description {
+    padding: 30px 30px;
+}
+
+.push {
+  clear: both;
+  height: 20px;
+}
+
+footer {
+   clear: both;
+   text-align: bottom;
+   padding-bottom: 40px;
+}
+
+.bottomMenu {
+    display: block;
+    height: 40px;
+    background: linear-gradient(to top, #aaa, #ddd);
+}
+
+.bottomMenuList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     float: left;
-    margin-left; 200px;
+    color: white;
+    line-height: 40px;
+}
+
+.bottomMenu li {
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.bottomMenu span {
+    float: right;
+    padding-right: 40px;
+    line-height: 40px;
+    color: white;
+}
+
+.bottomMenu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 140px;
+    height: 40px;
+}
+
+.bottomMenu a:hover {
+    text-decoration: underline;
 }
