@@ -73,14 +73,10 @@ body {
     color: #656363;
 }
 
-.sidebarmenu a:hover {
+.sidebarmenu li:hover {
     background: #F9F9F9;
     color: #2c2b2b;
-}
-
-.sidebarmenu span:hover {
-    display: block;
-    padding-left: 28px;
+    text-indent: 28px;
 }
 
 .content {
